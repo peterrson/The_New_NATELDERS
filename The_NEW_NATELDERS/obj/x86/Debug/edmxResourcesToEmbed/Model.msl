@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="databaseModelStoreContainer" CdmEntityContainer="databaseEntities2">
+    <EntitySetMapping Name="personals">
+      <EntityTypeMapping TypeName="databaseModel.personal">
+        <MappingFragment StoreEntitySet="personal">
+          <ScalarProperty Name="personalid" ColumnName="personalid" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="OtherNames" ColumnName="OtherNames" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="RCCNO" ColumnName="RCCNO" />
+          <ScalarProperty Name="YearLastPromoted" ColumnName="YearLastPromoted" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="StateofOrigin" ColumnName="StateofOrigin" />
+          <ScalarProperty Name="DateEmployed" ColumnName="DateEmployed" />
+          <ScalarProperty Name="PresentLocation" ColumnName="PresentLocation" />
+          <ScalarProperty Name="DateofLastPosting" ColumnName="DateofLastPosting" />
+          <ScalarProperty Name="LanguagesSpoken" ColumnName="LanguagesSpoken" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="GradeLevel" ColumnName="GradeLevel" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="OrdinationStatus" ColumnName="OrdinationStatus" />
+          <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="HomeTown" ColumnName="HomeTown" />
+          <ScalarProperty Name="TypeofMarriage" ColumnName="TypeofMarriage" />
+          <ScalarProperty Name="DateofMarriage" ColumnName="DateofMarriage" />
+          <ScalarProperty Name="ResidentialAddress" ColumnName="ResidentialAddress" />
+          <ScalarProperty Name="PensionName" ColumnName="PensionName" />
+          <ScalarProperty Name="RSAPIN" ColumnName="RSAPIN" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Next_OF_Kin" ColumnName="Next-OF-Kin" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Relationship" ColumnName="Relationship" />
+          <ScalarProperty Name="TelephoneNumber" ColumnName="TelephoneNumber" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="SPIRITUAL" ColumnName="SPIRITUAL" />
+          <ScalarProperty Name="DateJoinRCCG" ColumnName="DateJoinRCCG" />
+          <ScalarProperty Name="DateBornAgain" ColumnName="DateBornAgain" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="PresentProvince" ColumnName="PresentProvince" />
+          <ScalarProperty Name="DateOrdainedAsAssistantPastor" ColumnName="DateOrdainedAsAssistantPastor" />
+          <ScalarProperty Name="DateOrdainedAsFullPastor" ColumnName="DateOrdainedAsFullPastor" />
+          <ScalarProperty Name="QUALIFICATION" ColumnName="QUALIFICATION" />
+          <ScalarProperty Name="PrimarySchool" ColumnName="PrimarySchool" />
+          <ScalarProperty Name="DateStartPrimary" ColumnName="DateStartPrimary" />
+          <ScalarProperty Name="DateEndPrimary" ColumnName="DateEndPrimary" />
+          <ScalarProperty Name="Secondary" ColumnName="Secondary" />
+          <ScalarProperty Name="DateStartSecondary" ColumnName="DateStartSecondary" />
+          <ScalarProperty Name="DateEndSecondary" ColumnName="DateEndSecondary" />
+          <ScalarProperty Name="HigherEducationInstitution" ColumnName="HigherEducationInstitution" />
+          <ScalarProperty Name="DateStartHigherEducation" ColumnName="DateStartHigherEducation" />
+          <ScalarProperty Name="DateEndHigherEducation" ColumnName="DateEndHigherEducation" />
+          <ScalarProperty Name="OtherCertificates" ColumnName="OtherCertificates" />
+          <ScalarProperty Name="DateStartBaptismalClass" ColumnName="DateStartBaptismalClass" />
+          <ScalarProperty Name="DateEndBaptismalClass" ColumnName="DateEndBaptismalClass" />
+          <ScalarProperty Name="DateStartWorkersInTraining" ColumnName="DateStartWorkersInTraining" />
+          <ScalarProperty Name="DateEndWorkersInTraining" ColumnName="DateEndWorkersInTraining" />
+          <ScalarProperty Name="DateStartSOD" ColumnName="DateStartSOD" />
+          <ScalarProperty Name="DateEndSOD" ColumnName="DateEndSOD" />
+          <ScalarProperty Name="YearStartRCBC" ColumnName="YearStartRCBC" />
+          <ScalarProperty Name="DateEndRCBC" ColumnName="DateEndRCBC" />
+          <ScalarProperty Name="DateStartRCM" ColumnName="DateStartRCM" />
+          <ScalarProperty Name="DateEndRCM" ColumnName="DateEndRCM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

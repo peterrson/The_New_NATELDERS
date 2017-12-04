@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="databaseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="databaseModelStoreContainer">
+    <EntitySet Name="personal" EntityType="databaseModel.Store.personal" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="personal">
+    <Key>
+      <PropertyRef Name="personalid" />
+    </Key>
+    <Property Name="personalid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="50" />
+    <Property Name="OtherNames" Type="nvarchar" MaxLength="50" />
+    <Property Name="Designation" Type="nvarchar" MaxLength="50" />
+    <Property Name="RCCNO" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="YearLastPromoted" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateofBirth" Type="nvarchar" MaxLength="50" />
+    <Property Name="Age" Type="nvarchar" MaxLength="50" />
+    <Property Name="StateofOrigin" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateEmployed" Type="nvarchar" MaxLength="50" />
+    <Property Name="PresentLocation" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateofLastPosting" Type="nvarchar" MaxLength="50" />
+    <Property Name="LanguagesSpoken" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="GradeLevel" Type="nvarchar" MaxLength="50" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="EMail" Type="nvarchar" MaxLength="50" />
+    <Property Name="OrdinationStatus" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaritalStatus" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nationality" Type="nvarchar" MaxLength="50" />
+    <Property Name="HomeTown" Type="nvarchar" MaxLength="50" />
+    <Property Name="TypeofMarriage" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateofMarriage" Type="nvarchar" MaxLength="50" />
+    <Property Name="ResidentialAddress" Type="nvarchar" MaxLength="250" />
+    <Property Name="PensionName" Type="nvarchar" MaxLength="50" />
+    <Property Name="RSAPIN" Type="nvarchar" MaxLength="50" />
+    <Property Name="State" Type="nvarchar" MaxLength="50" />
+    <Property Name="Country" Type="nvarchar" MaxLength="50" />
+    <Property Name="Next-OF-Kin" Type="nchar" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Relationship" Type="nvarchar" MaxLength="50" />
+    <Property Name="TelephoneNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar" MaxLength="250" />
+    <Property Name="SPIRITUAL" Type="text" />
+    <Property Name="DateJoinRCCG" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateBornAgain" Type="nvarchar" MaxLength="50" />
+    <Property Name="Region" Type="nvarchar" MaxLength="50" />
+    <Property Name="PresentProvince" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateOrdainedAsAssistantPastor" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateOrdainedAsFullPastor" Type="nvarchar" MaxLength="50" />
+    <Property Name="QUALIFICATION" Type="text" />
+    <Property Name="PrimarySchool" Type="nvarchar" MaxLength="500" />
+    <Property Name="DateStartPrimary" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateEndPrimary" Type="nvarchar" MaxLength="50" />
+    <Property Name="Secondary" Type="nvarchar" MaxLength="500" />
+    <Property Name="DateStartSecondary" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateEndSecondary" Type="nvarchar" MaxLength="50" />
+    <Property Name="HigherEducationInstitution" Type="nvarchar" MaxLength="1000" />
+    <Property Name="DateStartHigherEducation" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateEndHigherEducation" Type="nvarchar" MaxLength="50" />
+    <Property Name="OtherCertificates" Type="nvarchar" MaxLength="300" />
+    <Property Name="DateStartBaptismalClass" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateEndBaptismalClass" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateStartWorkersInTraining" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateEndWorkersInTraining" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateStartSOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateEndSOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="YearStartRCBC" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateEndRCBC" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateStartRCM" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateEndRCM" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+</Schema>
