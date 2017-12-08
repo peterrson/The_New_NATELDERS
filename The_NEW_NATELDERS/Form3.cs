@@ -32,13 +32,11 @@ namespace The_NEW_NATELDERS
         {
             this.Hide();
             Form2 ss = new Form2();
-            (ss).Show();
+            (ss).ShowDialog();
         }
         private void btnsave_Click_1(object sender, EventArgs e)
         {
-            
-            
-            try
+           try
             {
                 if (SqlCon.State == ConnectionState.Closed)
                     SqlCon.Open();
@@ -227,8 +225,6 @@ namespace The_NEW_NATELDERS
              dgvv3.Columns[0].Visible = false;
              SqlCon.Close();
          }
-         
-
         }
         private void dgvv3_DoubleClick_1(object sender, EventArgs e)
         {
@@ -322,8 +318,7 @@ namespace The_NEW_NATELDERS
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-           
-            try
+           try
             {
                 if (SqlCon.State == ConnectionState.Closed)
                     SqlCon.Open();
@@ -340,8 +335,7 @@ namespace The_NEW_NATELDERS
             }
             catch (Exception ex)
             {
-
-                MessageBox.Show(ex.Message, "Error Message");
+                 MessageBox.Show(ex.Message, "Error Message");
             }    
         }
 
@@ -350,12 +344,11 @@ namespace The_NEW_NATELDERS
             Reset();
             //FillDataGridView();                                           
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form2 ss = new Form2();
-            (ss).Show();
+            (ss).ShowDialog();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -363,8 +356,9 @@ namespace The_NEW_NATELDERS
             this.Hide();
             Form4 ss = new Form4();
             //ss.Surname = txtsur.Text;
-            (ss).Show();
+            (ss).ShowDialog();
         }
+
     }
 }                                                                       
                                                                          

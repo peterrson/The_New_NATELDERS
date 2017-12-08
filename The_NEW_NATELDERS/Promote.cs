@@ -19,6 +19,8 @@ namespace The_NEW_NATELDERS
         public string RCCNO;
         public string YearLastPromoted;
         public string Designation;
+        public string DateofBirth;
+        public string GradeLevel;
         public Promote()
         {
             InitializeComponent();
@@ -31,7 +33,8 @@ namespace The_NEW_NATELDERS
             lblOtherNames.Text = OtherNames;
             txtYearLastPromoted.Text = YearLastPromoted;
             lblCurrentDesignation.Text = Designation;
-
+            lblDateofBirth.Text = DateofBirth;
+            txtGradeLevel.Text = GradeLevel;
         }
 
         private void btnPromote_Click(object sender, EventArgs e)
@@ -69,11 +72,13 @@ namespace The_NEW_NATELDERS
                     if (SqlCon.State == ConnectionState.Closed)
                         SqlCon.Open();
                     {
-                        SqlCommand SqlCmd = new SqlCommand("UPDATE personal SET YearLastPromoted=@YearLastPromoted, Designation=@Designation WHERE RCCNO=@RCCNO", SqlCon);
+                        SqlCommand SqlCmd = new SqlCommand("UPDATE personal SET YearLastPromoted=@YearLastPromoted, Designation=@Designation, DateofBirth=@DateofBirth, GradeLevel=@GradeLevel WHERE RCCNO=@RCCNO", SqlCon);
                         SqlCmd.CommandType = CommandType.Text;
                         SqlCmd.Parameters.AddWithValue("@YearLastPromoted", txtYearLastPromoted.Text);
                         SqlCmd.Parameters.AddWithValue("@RCCNO", lblRCCNO.Text.Trim());
                         SqlCmd.Parameters.AddWithValue("@Designation", NewDesignation);
+                        SqlCmd.Parameters.AddWithValue("@DateofBirth", lblDateofBirth.Text.Trim());
+                        SqlCmd.Parameters.AddWithValue("@GradeLevel", txtGradeLevel.Text);
                         SqlCmd.ExecuteNonQuery();
                         MessageBox.Show("Employee promoted successfully");
                     }

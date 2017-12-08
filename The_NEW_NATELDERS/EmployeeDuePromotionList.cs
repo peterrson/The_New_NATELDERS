@@ -10,21 +10,20 @@ using System.Data.SqlClient;
 
 namespace The_NEW_NATELDERS
 {
-    public partial class EmployeeDuePromotionList : Form
+    public partial class EmployeeDuePromottion : Form
     {
        public DataTable dt = new DataTable();
-        public EmployeeDuePromotionList()
+       public EmployeeDuePromottion()
         {
             InitializeComponent();
         }
 
-        private void EmployeeDuePromotionList_Load(object sender, EventArgs e)
-        {
-            
-            EmployeeGrid.DataSource = dt;
-        }
+       private void EmployeeDuePromotionList_Load(object sender, EventArgs e)
+       {
 
-        private void EmployeeGrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+           EmployeeGrid.DataSource = dt;
+       }
+        private void EmployeeGrid_DoubleClick(object sender, EventArgs e)
         {
             if (EmployeeGrid.CurrentRow.Index != -1)
             {
@@ -35,8 +34,10 @@ namespace The_NEW_NATELDERS
                 ss.RCCNO = EmployeeGrid.CurrentRow.Cells[2].Value.ToString();
                 ss.YearLastPromoted = EmployeeGrid.CurrentRow.Cells[3].Value.ToString();
                 ss.Designation = EmployeeGrid.CurrentRow.Cells[4].Value.ToString();
+                ss.DateofBirth = EmployeeGrid.CurrentRow.Cells[5].Value.ToString();
+                ss.GradeLevel = EmployeeGrid.CurrentRow.Cells[6].Value.ToString();
                 ss.ShowDialog();
-            }
         }
     }
+  }
 }

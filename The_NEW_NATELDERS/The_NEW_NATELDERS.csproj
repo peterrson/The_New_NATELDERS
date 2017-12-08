@@ -119,6 +119,12 @@
     <Compile Include="Form6.Designer.cs">
       <DependentUpon>Form6.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListofRetiree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListofRetiree.Designer.cs">
+      <DependentUpon>ListofRetiree.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Promote.cs">
       <SubType>Form</SubType>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListofRetiree.resx">
+      <DependentUpon>ListofRetiree.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Promote.resx">
       <DependentUpon>Promote.cs</DependentUpon>

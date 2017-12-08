@@ -1,6 +1,6 @@
 ﻿namespace The_NEW_NATELDERS
 {
-    partial class EmployeeDuePromotionList
+    partial class EmployeeDuePromottion
     {
         /// <summary>
         /// Required designer variable.
@@ -34,20 +34,22 @@
             // 
             // EmployeeGrid
             // 
+            this.EmployeeGrid.BackgroundColor = System.Drawing.Color.DarkSlateGray;
             this.EmployeeGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.EmployeeGrid.Location = new System.Drawing.Point(138, 39);
+            this.EmployeeGrid.Location = new System.Drawing.Point(12, 12);
             this.EmployeeGrid.Name = "EmployeeGrid";
-            this.EmployeeGrid.Size = new System.Drawing.Size(695, 227);
+            this.EmployeeGrid.Size = new System.Drawing.Size(654, 337);
             this.EmployeeGrid.TabIndex = 0;
-            this.EmployeeGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployeeGrid_CellDoubleClick);
+            this.EmployeeGrid.DoubleClick += new System.EventHandler(this.EmployeeGrid_DoubleClick);
             // 
-            // EmployeeDuePromotionList
+            // EmployeeDuePromottion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(870, 372);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ClientSize = new System.Drawing.Size(680, 372);
             this.Controls.Add(this.EmployeeGrid);
-            this.Name = "EmployeeDuePromotionList";
+            this.Name = "EmployeeDuePromottion";
             this.Text = "EmployeeDuePromotionList";
             this.Load += new System.EventHandler(this.EmployeeDuePromotionList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.EmployeeGrid)).EndInit();

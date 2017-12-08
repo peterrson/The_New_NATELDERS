@@ -12,7 +12,6 @@ namespace The_NEW_NATELDERS
 {
     public partial class Form4 : Form
     {
-        public string Surname;
         SqlConnection SqlCon = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\PETERRSON\Documents\Visual Studio 2010\Projects\ElderNatSecCgo\DB\database.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True");
        // int personalid = 0;
         public Form4()
@@ -23,7 +22,7 @@ namespace The_NEW_NATELDERS
         {
             this.Hide();
             Form3 ss = new Form3();
-            (ss).Show();
+            (ss).ShowDialog();
         } 
         void FillDataGridView()
         {
@@ -124,11 +123,7 @@ namespace The_NEW_NATELDERS
                   timer2.Stop();
                   timer1.Start();
               }
-        }
-
-        private void Form4_Load(object sender, EventArgs e)
-        {
-            MessageBox.Show(Surname);
+        
         }
     }
 }

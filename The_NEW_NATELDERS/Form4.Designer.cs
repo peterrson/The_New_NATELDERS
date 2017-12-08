@@ -623,7 +623,6 @@
             this.Controls.Add(this.txtsur);
             this.Name = "Form4";
             this.Text = "PERSONAL DATA";
-            this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvv3)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
